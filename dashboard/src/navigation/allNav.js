@@ -39,14 +39,14 @@ export const allNav = [
     title: "Payment Request",
     icon: <MdPayment />,
     role: "admin",
-    path: "/admin/dashboard/deactive-sellers",
+    path: "/admin/dashboard/Payment-Request",
   },
   {
     id: 6,
     title: "Deactive Sellers",
     icon: <FaUserTimes />,
     role: "admin",
-    path: "/admin/dashboard/orders",
+    path: "/admin/dashboard/Deactive-Sellers",
   },
   {
     id: 7,
