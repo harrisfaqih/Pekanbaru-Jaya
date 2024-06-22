@@ -75,8 +75,8 @@ const Category = () => {
                             "gembok ats 30",
                             "gembok vion 30",
                             "gembok xp tool 30",
-                            "mesin gerinda ats",
-                            "meisn gerinda maktech",
+                            "gerinda ats ",
+                            "gerinda maktech",
                           ][i]
                         }
                       </td>
