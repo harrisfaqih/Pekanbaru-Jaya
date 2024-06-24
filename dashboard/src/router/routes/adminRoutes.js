@@ -18,6 +18,7 @@ const Products = lazy(() => import("../../views/admin/Products"));
 const DiscountProducts = lazy(() =>
   import("../../views/admin/DiscountProducts.jsx")
 );
+const EditProduct = lazy(() => import("../../views/admin/EditProduct"));
 
 export const adminRoutes = [
   {
@@ -84,5 +85,11 @@ export const adminRoutes = [
     path: "admin/dashboard/discount-product",
     element: <DiscountProducts />,
     role: "admin",
+  },
+  {
+    path: "/admin/dashboard/edit-product/:productId",
+    element: <EditProduct />,
+    role: "admin",
+    status: "active",
   },
 ];

@@ -62,7 +62,6 @@ const DiscountProducts = () => {
                 // eslint-disable-next-line react/jsx-no-comment-textnodes
                 [1, 2, 3, 4, 5].map((d, i) => (
                   <tr key={i}>
-                    // eslint-disable-next-line jsx-a11y/scope
                     <td
                       scope="row"
                       className="py-1 px-4 font-medium whitespace-nowrap"
@@ -75,7 +74,7 @@ const DiscountProducts = () => {
                     >
                       <img
                         className="w-[45px] h-[45px]"
-                        src={`http://localhost:3000/images/category/${d}.jpg`}
+                        src={`http://localhost:3000/images/${d}.jpg`}
                         alt=""
                       />
                     </td>
@@ -83,19 +82,27 @@ const DiscountProducts = () => {
                       scope="row"
                       className="py-1 px-4 font-medium whitespace-nowrap"
                     >
-                      Men Full Sleeve
+                      {
+                        [
+                          "gembok ats 30",
+                          "gembok vion 30",
+                          "gembok xp tool 30",
+                          "gerinda ats",
+                          "gerinda maktech",
+                        ][i]
+                      }
                     </td>
                     <td
                       scope="row"
                       className="py-1 px-4 font-medium whitespace-nowrap"
                     >
-                      Tshirt
+                      Tools
                     </td>
                     <td
                       scope="row"
                       className="py-1 px-4 font-medium whitespace-nowrap"
                     >
-                      Veirdo{" "}
+                      {["ATS", "VIAN", "XP TOOL", "ATS", "MAKTECH"][i]}
                     </td>
                     <td
                       scope="row"
