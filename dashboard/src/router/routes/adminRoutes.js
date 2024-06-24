@@ -14,6 +14,10 @@ const SellerRequest = lazy(() => import("../../views/admin/SellerRequest"));
 const SellerDetails = lazy(() => import("../../views/admin/SellerDetails"));
 const ChatSeller = lazy(() => import("../../views/admin/ChatSeller"));
 const OrderDetails = lazy(() => import("../../views/admin/OrderDetails"));
+const Products = lazy(() => import("../../views/admin/Products"));
+const DiscountProducts = lazy(() =>
+  import("../../views/admin/DiscountProducts.jsx")
+);
 
 export const adminRoutes = [
   {
@@ -67,8 +71,18 @@ export const adminRoutes = [
     role: "admin",
   },
   {
+    path: "admin/dashboard/Products",
+    element: <Products />,
+    role: "admin",
+  },
+  {
     path: "admin/dashboard/order/details/:orderId",
     element: <OrderDetails />,
+    role: "admin",
+  },
+  {
+    path: "admin/dashboard/discount-product",
+    element: <DiscountProducts />,
     role: "admin",
   },
 ];

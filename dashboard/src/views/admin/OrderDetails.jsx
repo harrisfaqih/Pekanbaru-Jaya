@@ -69,7 +69,7 @@ const OrderDetails = () => {
                     <div className="flex gap-3 text-md">
                       <img
                         className="w-[50px] h-[50px]"
-                        src="http://localhost:3000/images/1.jpg"
+                        src="http://localhost:3000/images/2.jpg"
                         alt=""
                       />
 
@@ -90,7 +90,7 @@ const OrderDetails = () => {
                     <div className="flex gap-3 text-md">
                       <img
                         className="w-[50px] h-[50px]"
-                        src="http://localhost:3000/images/1.jpg"
+                        src="http://localhost:3000/images/3.jpg"
                         alt=""
                       />
 

@@ -36,6 +36,7 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
             />
           </Link>
         </div>
+
         <div className="px-[16px]">
           <ul>
             {allNav.map((n, i) => (
