@@ -4,7 +4,7 @@ import { FaGoogle, FaFacebook } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
 import { PropagateLoader } from "react-spinners";
 import { overrideStyle } from "../../utils/utils";
-import { seller_register } from "../../store/Reducers/authReducer";
+// import { seller_register } from "../../store/Reducers/authReducer";
 
 const Register = () => {
   const dispatch = useDispatch();

@@ -39,9 +39,9 @@ class authControllers {
   };
   // end methode
 
-  seller_register = async (req, res) => {
-    const { email, name, password } = req.body;
-  };
+  // seller_register = async (req, res) => {
+  //   const { email, name, password } = req.body;
+  // };
   getUser = async (req, res) => {
     const { id, role } = req;
 
