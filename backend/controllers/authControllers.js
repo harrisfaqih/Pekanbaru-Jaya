@@ -2,6 +2,12 @@ const adminModel = require("../models/adminModel");
 const { responseReturn } = require("../utiles/response");
 const bcrpty = require("bcrypt");
 const { createToken } = require("../utiles/tokenCreate");
+const {
+  default: Register,
+} = require("../../dashboard/src/views/auth/Register");
+const {
+  seller_register,
+} = require("../../dashboard/src/store/Reducers/authReducer");
 
 class authControllers {
   admin_login = async (req, res) => {
@@ -33,6 +39,9 @@ class authControllers {
   };
   // end methode
 
+  seller_register = async (req, res) => {
+    const { email, name, password } = req.body;
+  };
   getUser = async (req, res) => {
     const { id, role } = req;
 
